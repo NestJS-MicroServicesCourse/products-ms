@@ -24,6 +24,8 @@ async function bootstrap() {
     }),
   );
 
+  await app.listen();
+
   logger.log(`Products MS is running on: http://localhost:${envs.port}`);
 }
 bootstrap();
